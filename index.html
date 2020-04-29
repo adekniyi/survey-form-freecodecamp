@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Survery page</title>
 </head>
 <body>
     <div id="main">
-        <div id="title"></div>
-        <div id="description"></div>
-        <form id="survey-form" action="">
-            <label for="name" id="name-label"></label> <br>
-            <label for="email" id="email-label"></label> <br>
-            <label for="number" id="number-label"></label> <br>
-            <input type="text" placeholder="Enter your Name" name="name" id="name" required> <br>
-            <input type="email" placeholder="Enter Your Email" name="email" id="email" required><br>
-            <input type="number" placeholder="Enter a Number" name="number" id="number" required><br>
-            <select name="dropdown" id="dropdown">
-                <option value="">Select any</option>
-                <option value="">fkjwqjfq</option>
-                <option value="">fkjwqjfq</option>
-                <option value="">fkjwqjfq</option>
-                <option value="">fkjwqjfq</option>
-            </select><br>
-            <input type="radio" name="radioinput" id="radioinput"> iwqcd<br>
-            <input type="radio" name="radioinput" id="radioinput">jccqcq<br>
-            <input type="radio" name="radioinput" id="radioinput">jsacnfckj<br>
-            <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">cqewfcefc<br>
-            <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">evr3res<br>
-            <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">cwef43nh<br>
-            <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">6j6jwwr2<br>
-            <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
-            <button id="submit"></button>
-        </form>
+        <h1 id="title">My Website Survey</h1>
+        <p id="description">Pls fill in the following information so we can serve you better</p>
+            <form id="survey-form" action="">
+                <label for="name" id="name-label">Name:</label> <br>
+                <input type="text" placeholder="Enter your Name" name="name" id="name" required> <br>
+                <label for="email" id="email-label">Email:</label> <br>
+                <input type="email" placeholder="Enter Your Email" name="email" id="email" required><br>
+                <label for="number" id="number-label">Number:</label> <br>
+                <input type="number" placeholder="Enter a Number" name="number" id="number" min="10" max="100"><br>
+                <label for="cheboxes">How did you hear about my Website?</label><br>
+                <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">Social media<br>
+                <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">Friends<br>
+                <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">Search Engine<br>
+                <input type="checkbox" name="cheboxes" value="checkboxes" id="cheboxes">other<br>
+                <label for="checkboxes">Which device did you use to access my Website?</label><br>
+                <input type="checkbox" name="checkboxes" value="checkboxes" id="checkboxes">Laptop/Desktop<br>
+                <input type="checkbox" name="checkboxes" value="checkboxes" id="checkboxes">Ipad Device<br>
+                <input type="checkbox" name="checkboxes" value="checkboxes" id="checkboxes">IOS device<br>
+                <input type="checkbox" name="checkboxes" value="checkboxes" id="checkboxes">Andriod Device<br>
+              
+            </form>
+       
     </div>
 </body>
 </html>
